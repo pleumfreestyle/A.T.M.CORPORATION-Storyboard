@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A.T.M. CORPORATION – FACTORY TOUR</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f6fb;--sf:#fff;--tx:#0b1b33;--mu:#566488;--bd:#d6deec;--ac:#0b2a5b;--yl:#ffc20e;--nv:#0b2a5b;--wr:#fff3c4;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#07132a;--sf:#0e2147;--tx:#eaf0fb;--mu:#9fb0cf;--bd:#223a66;--ac:#8fb2f5;--nv:#0b2a5b;--wr:#3a3210;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#07132a;--sf:#0e2147;--tx:#eaf0fb;--mu:#9fb0cf;--bd:#223a66;--ac:#8fb2f5;--nv:#0b2a5b;--wr:#3a3210;color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 56px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 16px/1.7 'Noto Sans Thai',system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--nv);z-index:10}
+.w{max-width:1100px;margin:auto;padding:28px 16px}
+.hero{background:linear-gradient(135deg,#0b2a5b,#123d82);color:#fff;border-bottom:6px solid var(--yl)}
+.hero .w{padding:44px 16px}
+h1{font-size:clamp(26px,5vw,46px);line-height:1.25;margin:0 0 8px;font-weight:800}
+.hero p{margin:0;color:#cfdcf5}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chips span{background:var(--yl);color:#0b2a5b;font-weight:600;padding:2px 12px;border-radius:99px;font-size:14px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--nv);display:flex;gap:4px;overflow-x:auto;padding:0 8px}
+nav a{color:#fff;text-decoration:none;padding:12px 14px;white-space:nowrap;font-size:15px;border-bottom:3px solid transparent}
+nav a:hover,nav a:focus-visible{border-color:var(--yl);outline:none}
+h2{font-size:24px;margin:0 0 14px;padding-left:12px;border-left:6px solid var(--yl);color:var(--ac)}
+h3{margin:0 0 10px;color:var(--ac);font-size:20px}
+.g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.cd{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:14px}
+.cd b{color:var(--ac)}
+.tg{display:inline-block;font-size:13px;padding:0 10px;border-radius:99px;font-weight:600;margin:2px}
+.t1{background:var(--nv);color:#fff}.t2{background:var(--yl);color:#0b2a5b}.t3{border:1px dashed #d9822b;color:#d9822b}
+.org{display:flex;flex-direction:column;align-items:center;gap:10px}
+.bx{background:var(--sf);border:2px solid var(--nv);border-radius:8px;padding:8px 14px;text-align:center;font-size:14px}
+.bx.p{border:2px dashed #d9822b}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;width:100%}
+#cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;margin-bottom:18px}
+.card{display:flex;gap:10px;align-items:center;text-align:left;background:var(--sf);color:var(--tx);border:2px solid var(--bd);border-radius:8px;padding:10px;font:inherit;cursor:pointer}
+.card b{flex:none;width:38px;height:38px;border-radius:6px;background:var(--nv);color:var(--yl);display:grid;place-items:center;font-size:18px}
+.card small{display:block;color:var(--mu);font-size:13px}
+.card:hover,.card:focus-visible{border-color:var(--yl);outline:none}
+.card.on{border-color:var(--yl);background:var(--wr)}
+#det{background:var(--sf);border:1px solid var(--bd);border-top:6px solid var(--yl);border-radius:8px;padding:16px}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px 18px;margin:0 0 14px}
+.meta div{border-bottom:1px solid var(--bd);padding-bottom:4px}
+.meta dt{font-size:13px;color:var(--mu);font-weight:600}.meta dd{margin:0;font-size:15px}
+.tw{overflow-x:auto;border:1px solid var(--bd);border-radius:6px}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:14px}
+th{background:var(--nv);color:#fff;text-align:left;padding:8px}
+td{padding:8px;border-top:1px solid var(--bd);vertical-align:top}
+td:first-child{font-weight:800;color:var(--ac)}
+.nv{display:flex;justify-content:space-between;margin-top:14px;gap:8px}
+button.b,.tabs button{font:inherit;cursor:pointer;border:2px solid var(--nv);background:var(--sf);color:var(--ac);border-radius:6px;padding:4px 14px}
+button.b:hover,.tabs button:hover,.tabs button.on{background:var(--yl);border-color:var(--yl);color:#0b2a5b}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+#pan{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:14px}
+#pan label{display:block;padding:3px 0;border-bottom:1px solid var(--bd)}
+#pan input{margin-right:8px;accent-color:var(--nv)}
+footer{text-align:center;color:var(--mu);font-size:13px;padding:20px}
+@media (max-width:600px){.w{padding:20px 12px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="w">
+<h1>A.T.M. CORPORATION – FACTORY TOUR</h1>
+<p>11 Episodes: Discover Our Factory, People, Technology, and Production Process</p>
+<div class="chips"><span>11 ตอน</span><span>Storyboard พร้อมใช้ถ่ายทำจริง</span><span>กลุ่มเป้าหมายหลัก B2B</span></div>
+</div></header>
+<nav><a href="#ov">ภาพรวมโครงการ</a><a href="#co">ข้อมูลบริษัท</a><a href="#org">โครงสร้างองค์กร</a><a href="#eps">11 ตอน</a><a href="#plan">แผนการผลิต</a></nav>
+<main>
+<section id="ov" class="w"><h2>ภาพรวมโครงการ</h2>
+<p>ซีรีส์วิดีโอ 11 ตอนแนะนำ A.T.M. CORPORATION CO., LTD. ผู้ผลิตและจัดจำหน่ายผลิตภัณฑ์พลาสติกอุตสาหกรรมและบรรจุภัณฑ์ ตั้งแต่องค์กร คน โรงงาน เครื่องจักร กระบวนการผลิต คุณภาพ ไปจนถึงการส่งมอบ แต่ละตอนมีวัตถุประสงค์ต่างกัน ไม่ซ้ำเนื้อหา</p>
+<div class="g3">
+<div class="cd"><b>ไม่แต่งข้อมูลเอง</b><br>ข้อมูลที่ยังไม่ยืนยันทั้งหมดระบุว่า รอข้อมูลจากบริษัท</div>
+<div class="cd"><b>ถ่ายจากการทำงานจริง</b><br>ใช้ภาพเครื่องจักรและพนักงานจริง ไม่ใช้ภาพสต็อก</div>
+<div class="cd"><b>ความปลอดภัยและการอนุญาต</b><br>ขออนุญาตก่อนถ่ายพนักงาน พื้นที่จำกัด เอกสารลับ และข้อมูลลูกค้า</div></div>
+<p>สถานะข้อมูล: <span class="tg t1">ยืนยันจากบรีฟ</span><span class="tg t2">ข้อเสนอแนะ</span><span class="tg t3">รอข้อมูลจากบริษัท</span></p>
+</section>
+<section id="co" class="w"><h2>ข้อมูลบริษัท</h2>
+<div class="g3">
+<div class="cd"><span class="tg t1">ยืนยันจากบรีฟ</span><br><b>ชื่อ:</b> A.T.M. CORPORATION CO., LTD.<br><b>ธุรกิจ:</b> ผู้ผลิตและจัดจำหน่ายผลิตภัณฑ์พลาสติกอุตสาหกรรมและบรรจุภัณฑ์</div>
+<div class="cd"><span class="tg t1">ยืนยันจากบรีฟ</span><br><b>หมวดผลิตภัณฑ์:</b> LDPE, HDPE, VCI, Anti-static, Anti-UV Film, Stretch Film, Shrink Film, Cover Bags, พลาสติกเพื่อการเกษตร, ผลิตภัณฑ์สั่งทำพิเศษ</div>
+<div class="cd"><span class="tg t3">รอข้อมูลจากบริษัท</span><br>ประวัติบริษัท • ผู้บริหาร • ใบรับรองและมาตรฐาน • ที่ตั้งและช่องทางติดต่อ • ข้อความแบรนด์</div></div>
+</section>
+<section id="org" class="w"><h2>โครงสร้างองค์กร</h2>
+<div class="org" id="oc"></div>
+<p><span class="tg t2">ข้อเสนอแนะ</span> ตรวจสอบว่าบริษัทมีหน้าที่เหล่านี้หรือไม่ ก่อนตั้งชื่อฝ่ายจริง: ผลิต • QC • คลังสินค้า • ขนส่ง • ขาย • จัดซื้อ • บัญชี/บุคคล</p>
+<div class="g3"><div class="cd bx p">ความสัมพันธ์ระหว่างฝ่าย<br>รอข้อมูลจากบริษัท</div><div class="cd bx p">ผังโรงงาน (Factory Map)<br>รอข้อมูลจากบริษัท</div></div>
+</section>
+<section id="eps" class="w"><h2>11 ตอน และ Storyboard</h2>
+<div id="cards"></div><div id="det"></div></section>
+<section id="plan" class="w"><h2>แผนการผลิต</h2>
+<div class="tabs" id="tabs"></div><div id="pan"></div></section>
+</main>
+<footer>A.T.M. CORPORATION – FACTORY TOUR • เอกสารวางแผนการผลิต ฉบับร่างเพื่อตรวจสอบกับบริษัท</footer>
+<script>
+const W='รอข้อมูลจากบริษัท',AUD='ลูกค้าอุตสาหกรรมและ B2B (หลัก), ฝ่ายจัดซื้อ, พันธมิตรธุรกิจ, ผู้สมัครงาน',
+MUS='ดนตรี corporate จังหวะปานกลาง + เสียงเครื่องจักรจริง (ambient) + เสียงเปลี่ยนฉากสั้น ๆ',
+SAF='สวม PPE ทุกครั้ง ห้ามเข้าเขตอันตรายขณะเครื่องเดิน ขออนุญาตก่อนถ่ายพนักงาน พื้นที่จำกัด เอกสารลับ และข้อมูลลูกค้า';
+const E=[
+{t:'แนะนำ A.T.M. CORPORATION',d:'8–10 นาที',o:'แนะนำองค์กรครบภาพรวม: ประวัติ ผู้บริหาร โครงสร้าง ฝ่ายงาน การทำงานร่วมกัน โรงงาน ผลิตภัณฑ์ มาตรฐาน และการติดต่อ',w:'ผู้บริหารและหัวหน้าทุกฝ่าย ('+W+')',q:'โดรน (ถ้าได้รับอนุญาต), กล้อง 2 ตัวสำหรับสัมภาษณ์, ไมค์ไร้สาย',n:'ยืนยันชื่อ-ตำแหน่งและการสะกดก่อนทำกราฟิก ผังโรงงานใช้เมื่อได้แผนผังจริง',s:[
+['30 วิ','โดรน/มุมกว้าง อาคารโรงงานยามเช้า ซูมเข้าป้ายบริษัท','ยินดีต้อนรับสู่ A.T.M. CORPORATION ผู้ผลิตและจัดจำหน่ายผลิตภัณฑ์พลาสติกอุตสาหกรรมและบรรจุภัณฑ์','A.T.M. CORPORATION CO., LTD.','ภายนอกโรงงาน'],
+['90 วิ','สัมภาษณ์ผู้บริหาร 2 มุมกล้อง สลับภาพเก่า/เอกสาร','[ประวัติและวิสัยทัศน์: '+W+']','ชื่อ-ตำแหน่งผู้บริหาร: '+W,'ห้องผู้บริหาร'],
+['120 วิ','Motion graphic แผนผังองค์กร + แพนเยี่ยมแต่ละฝ่าย หัวหน้าฝ่ายแนะนำตัวฝ่ายละ 5–8 วิ','แต่ละฝ่ายมีบทบาทเฉพาะ และทำงานต่อเนื่องกันตั้งแต่รับออเดอร์จนส่งมอบ [รายละเอียด: '+W+']','ฝ่าย/หัวหน้าฝ่าย: '+W,'ทุกฝ่าย'],
+['90 วิ','ผังโรงงาน + montage เครื่องจักรและสินค้า 10 หมวด','ผลิตภัณฑ์ของเรา: LDPE, HDPE, VCI, Anti-static, Anti-UV, Stretch Film, Shrink Film, Cover Bags, พลาสติกเกษตร และงานสั่งทำพิเศษ','ผังโรงงาน: '+W,'พื้นที่ผลิต/โชว์สินค้า'],
+['40 วิ','ภาพใบรับรอง (ถ้ามี) ปิดด้วยโลโก้และข้อมูลติดต่อ','มาตรฐานและการรับรอง: '+W+' ติดต่อเราได้ที่ ...','โทร/อีเมล/ที่อยู่: '+W,'สำนักงาน']]},
+{t:'โรงงานและสิ่งอำนวยความสะดวก',d:'5–6 นาที',o:'พาชมที่ตั้งและพื้นที่ใช้งานทุกส่วน ให้เห็นขนาดและความพร้อมของโรงงาน',w:'หัวหน้าฝ่ายผลิต/คลัง, พนักงานนำชม',q:'กิมบอล, โดรน (ถ้าได้รับอนุญาต), รถขนส่ง/forklift ตามจริง',s:[
+['30 วิ','โดรน/มุมกว้างรอบอาคาร ตามด้วยทางเข้าโรงงาน','โรงงานของเราตั้งอยู่ที่ [ที่ตั้ง: '+W+']','ที่ตั้งโรงงาน','ภายนอกโรงงาน'],
+['150 วิ','Walkthrough กิมบอล: พื้นที่ผลิต → เก็บวัตถุดิบ → คลังสินค้า พร้อมป้ายแต่ละพื้นที่','แต่ละพื้นที่มีหน้าที่ต่างกัน [รายละเอียดแต่ละอาคาร: '+W+']','ป้ายชื่อพื้นที่','พื้นที่ผลิต/คลัง'],
+['60 วิ','สำนักงาน time-lapse และจุดขนถ่ายสินค้า ปิดด้วยภาพรวมโรงงาน','จากสำนักงานถึงจุดขนส่ง ทุกพื้นที่ทำงานเชื่อมต่อกัน','พื้นที่ใช้งานหลัก','สำนักงาน/จุดโหลด']]},
+{t:'วัตถุดิบและการเตรียมวัสดุ',d:'4–5 นาที',o:'อธิบายวัตถุดิบและการเตรียมก่อนเข้าสู่การผลิต',w:'เจ้าหน้าที่คลังวัตถุดิบ/จัดซื้อ, พนักงานเตรียมวัสดุ',q:'อุปกรณ์ขนย้ายและเตรียมวัสดุ ('+W+')',s:[
+['30 วิ','Macro close-up วัตถุดิบ ค่อยดึงภาพออกเห็นพื้นที่เก็บ','จุดเริ่มต้นของสินค้าทุกชิ้นคือวัตถุดิบ [ชนิด: '+W+']','วัตถุดิบ','คลังวัตถุดิบ'],
+['90 วิ','ติดตามการขนย้ายและจัดเก็บ ภาพป้ายระบุล็อต/การจัดวาง','การจัดเก็บและขนย้ายอย่างเป็นระบบ [วิธีจริง: '+W+']','การจัดเก็บและขนย้าย','คลังวัตถุดิบ'],
+['60 วิ','มือพนักงานเตรียม/ชั่ง/ป้อนวัสดุ ตัดสลับ close-up','ขั้นเตรียมช่วยให้เข้าสู่ไลน์ผลิตได้ต่อเนื่อง [ขั้นตอน: '+W+']','เตรียมก่อนผลิต','พื้นที่เตรียมวัสดุ']]},
+{t:'การผลิตฟิล์มพลาสติก',d:'6–8 นาที',o:'แสดงเครื่องจักรและขั้นตอนผลิตฟิล์มจริง สิ่งที่ผู้ปฏิบัติงานเฝ้าดู และลักษณะงานที่ได้',w:'หัวหน้าไลน์/พนักงานควบคุมเครื่อง',q:'เครื่องผลิตฟิล์ม (ชนิด/รุ่น: '+W+')',n:'ถ่าย 3 ขนาดภาพ (กว้าง/กลาง/ใกล้) ต่อเครื่อง ใช้เสียงเครื่องจริงเป็น ambient ระวังเสียงดัง',s:[
+['30 วิ','Hero shot แนวเครื่องผลิตฟิล์ม ไล่จากต้นสายถึงปลายสาย','จากวัตถุดิบสู่ฟิล์มพลาสติกในกระบวนการผลิตจริงของเรา','การผลิตฟิล์ม','ไลน์ผลิตฟิล์ม'],
+['150 วิ','ตามเส้นทางวัสดุ: ป้อนวัสดุ → ขึ้นรูปฟิล์ม → ม้วนเก็บ; close-up หน้าจอควบคุมและมือผู้ปฏิบัติงาน','เครื่องทำหน้าที่ [รุ่น/หน้าที่: '+W+'] ผู้ปฏิบัติงานเฝ้าดู [ค่าที่ตรวจ: '+W+']','ชื่อเครื่อง/ขั้นตอน','ไลน์ผลิตฟิล์ม'],
+['45 วิ','ม้วนฟิล์มสำเร็จ close-up ผิวและความใส ปิดด้วยการเคลื่อนย้ายม้วน','ฟิล์มสำเร็จรูปพร้อมส่งต่อสู่ขั้นตอนถัดไป','ฟิล์มสำเร็จรูป','ปลายไลน์']]},
+{t:'การผลิตถุงพลาสติก',d:'5–6 นาที',o:'แสดงการแปรรูปฟิล์มเป็นถุง: ขึ้นรูป ตัด ซีล และตรวจสอบ',w:'พนักงานควบคุมเครื่องผลิตถุง, พนักงานตรวจสอบ',q:'เครื่องผลิตถุง (ชนิด/รุ่น: '+W+')',s:[
+['30 วิ','ม้วนฟิล์มเข้าสู่ไลน์ผลิตถุง มุมตามติด','ฟิล์มที่ผลิตแล้วถูกแปรรูปเป็นถุงตามแบบที่ลูกค้าต้องการ','การผลิตถุง','พื้นที่ผลิตถุง'],
+['120 วิ','Close-up ขึ้นรูป ตัด ซีล ด้วยสโลว์โมชัน และมุมข้างเครื่อง','เครื่องขึ้นรูป ตัด และซีลถุงตามขนาด [ขั้นตอน/รุ่นจริง: '+W+']','ขึ้นรูป • ตัด • ซีล','ไลน์ผลิตถุง'],
+['50 วิ','พนักงานตรวจถุงด้วยตา/นับ แล้วภาพถุงสำเร็จวางเรียง','ตรวจสอบก่อนบรรจุ เพื่อให้ถุงได้ตามที่กำหนด','ถุงสำเร็จรูป','จุดตรวจ/ปลายไลน์']]},
+{t:'ผลิตภัณฑ์พลาสติกเฉพาะทาง',d:'5–6 นาที',o:'อธิบายคุณสมบัติและการใช้งานของ VCI, Anti-static, Anti-UV และสินค้าเฉพาะทางอื่น',w:'ฝ่ายขาย/ผู้รู้ด้านผลิตภัณฑ์ ('+W+')',q:'ตัวอย่างสินค้าเฉพาะทางและกรณีใช้งานจริง (ขออนุญาตลูกค้า)',s:[
+['30 วิ','Product shot บนฉากเรียบ จัดวางสินค้าเฉพาะทางเรียงกัน','พลาสติกเฉพาะทาง ออกแบบเพื่อโจทย์เฉพาะของงานอุตสาหกรรม','ผลิตภัณฑ์เฉพาะทาง','มุมถ่ายสินค้า'],
+['150 วิ','สลับภาพสินค้าแต่ละชนิดกับตัวอย่างการใช้งาน + กราฟิกคุณสมบัติ','VCI ช่วยป้องกันสนิมของชิ้นงานโลหะ Anti-static ลดไฟฟ้าสถิต Anti-UV ทนรังสียูวี [สเปกจริง: '+W+']','VCI • Anti-static • Anti-UV','พื้นที่สินค้า/โรงงาน'],
+['40 วิ','กราฟิกสรุปการใช้งาน และสินค้าชนิดอื่น (ถ้ามี)','สอบถามผลิตภัณฑ์ที่เหมาะกับงานของคุณกับทีมของเรา','ติดต่อทีมขาย','สำนักงาน']]},
+{t:'งานพิมพ์และสินค้าสั่งทำ',d:'5–6 นาที',o:'แสดงบริการพิมพ์และปรับแต่งสินค้าตามต้องการ (เฉพาะที่บริษัทมีบริการจริง)',w:'ฝ่ายออกแบบ/พิมพ์/ขาย ('+W+')',q:'เครื่องพิมพ์ ('+W+'), ตัวอย่างงานสั่งทำ',n:'ขออนุญาตลูกค้าก่อนถ่ายงานพิมพ์ที่มีโลโก้หรือข้อมูลของลูกค้า',s:[
+['30 วิ','ตัวอย่างงานพิมพ์/งานสั่งทำหลากหลายเรียงบนโต๊ะ','พลาสติกของคุณ ปรับได้ตามแบบ ขนาด และการใช้งาน','งานสั่งทำพิเศษ','ห้องตัวอย่าง'],
+['120 วิ','ขั้นตอนเตรียมแบบ → พิมพ์ → ตรวจสี close-up เครื่องพิมพ์','ขั้นตอนเตรียมแบบและการพิมพ์ [ถ้ามีบริการ: '+W+']','ออกแบบ • พิมพ์ • ตรวจ','พื้นที่พิมพ์'],
+['60 วิ','กราฟิกขั้นตอนสั่งซื้อ แล้วภาพทีมขายคุยกับลูกค้า','แจ้งขนาด ชนิดวัสดุ และปริมาณ ทีมงานจะประสานต่อ [ช่องทางสั่ง: '+W+']','วิธีสั่งสินค้าตามแบบ','สำนักงานขาย']]},
+{t:'การควบคุมคุณภาพ (QC)',d:'5–6 นาที',o:'แสดงขั้นตอนตรวจสอบคุณภาพ และเหตุผลที่ QC สำคัญต่อลูกค้า',w:'พนักงาน/หัวหน้า QC',q:'เครื่องมือวัดและทดสอบ ('+W+')',n:'แสดงมาตรฐาน/ใบรับรองเฉพาะที่บริษัทยืนยันแล้วเท่านั้น',s:[
+['30 วิ','Close-up สายตาพนักงานตรวจสินค้าใต้ไฟ','คุณภาพคือสิ่งที่ลูกค้าอุตสาหกรรมไว้วางใจ','ควบคุมคุณภาพ (QC)','จุด/ห้อง QC'],
+['120 วิ','มุมใกล้เครื่องมือวัด การทดสอบ และการตรวจหาตำหนิ','ตรวจวัดและทดสอบ [รายการ/วิธีจริง: '+W+']','วัด • ทดสอบ • ตรวจตำหนิ','จุด/ห้อง QC'],
+['40 วิ','ตราอนุมัติสินค้า แยกงานผ่าน/ไม่ผ่าน และใบรับรอง (เมื่อยืนยันแล้ว)','สินค้าที่ผ่านการตรวจจึงถูกส่งต่อ มาตรฐานและใบรับรอง: '+W,'อนุมัติสินค้า','จุดอนุมัติ']]},
+{t:'การบรรจุและการจัดการคลังสินค้า',d:'4–5 นาที',o:'อธิบายการเก็บ คัดแยก บรรจุ และจัดการสต็อก ก่อนส่งมอบ',w:'ฝ่ายคลังสินค้า/บรรจุ',q:'ชั้นวาง/พาเลท, forklift, ระบบสต็อก ('+W+')',s:[
+['30 วิ','มุมสูงคลังสินค้า ไล่แถวชั้นวางและพาเลท','ก่อนถึงมือลูกค้า สินค้าต้องจัดเก็บอย่างเป็นระบบ','คลังสินค้า','คลังสินค้า'],
+['100 วิ','ติดตามขั้นตอนคัดแยก บรรจุ ติดฉลาก และตรวจนับสต็อก','การคัดแยก บรรจุ และติดฉลาก [วิธีจริง: '+W+']','คัดแยก • บรรจุ • สต็อก','พื้นที่บรรจุ'],
+['40 วิ','พาเลทสินค้าพร้อมส่ง time-lapse','สินค้าพร้อมส่งตามคำสั่งซื้อ','พร้อมจัดส่ง','จุดพักสินค้า']]},
+{t:'โลจิสติกส์และการจัดส่ง',d:'4–5 นาที',o:'แสดงการเตรียมออเดอร์ ขึ้นสินค้า และการประสานงานส่งมอบ',w:'ฝ่ายขนส่ง/คลัง/ขาย',q:'รถขนส่ง (ตามจริง), forklift, เอกสารส่งสินค้า (เบลอข้อมูลลูกค้า)',s:[
+['30 วิ','ใบสั่งซื้อ (เบลอข้อมูลลูกค้า) สู่การจัดเตรียมสินค้า','ทุกออเดอร์เริ่มจากการประสานงานระหว่างฝ่าย','เตรียมออเดอร์','สำนักงาน/คลัง'],
+['100 วิ','ภาพขึ้นสินค้า ตรวจนับ ปิดตู้/ท้ายรถ','ขั้นตอนขึ้นสินค้าและตรวจนับ [วิธีจริง: '+W+']','ขึ้นสินค้า','จุดโหลดสินค้า'],
+['50 วิ','รถออกจากโรงงาน ภาพส่งมอบ (ถ้าลูกค้าอนุญาต)','เราส่งมอบสินค้าให้ถึงมือลูกค้า [พื้นที่/เวลาจัดส่ง: '+W+']','ส่งถึงมือลูกค้า','หน้าโรงงาน/ปลายทาง']]},
+{t:'คน เทคโนโลยี และอนาคต',d:'6–7 นาที',o:'ปิดทัวร์ด้วยคน ทีมงาน เทคโนโลยี จุดแข็ง บริการลูกค้า และเป้าหมายในอนาคต',w:'พนักงานตัวแทนทุกฝ่าย, ผู้บริหาร',q:'กล้องสัมภาษณ์ 2 ตัว, ไมค์ไร้สาย, ภาพเครื่องจักรจากตอนก่อนหน้า',s:[
+['40 วิ','พอร์เทรตพนักงานตัวแทนแต่ละฝ่ายขณะทำงาน แนะนำชื่อและหน้าที่','เบื้องหลังทุกผลิตภัณฑ์คือทีมงานของเรา [ชื่อ/หน้าที่: '+W+']','ชื่อ-ตำแหน่ง','ทุกฝ่าย'],
+['120 วิ','Montage ทีมประสานงานข้ามฝ่าย เทคโนโลยีการผลิต และงานบริการลูกค้า','จุดแข็งของเรา [จุดแข็ง: '+W+'] และเป้าหมายในอนาคต [เป้าหมาย: '+W+']','จุดแข็ง • เทคโนโลยี • อนาคต','พื้นที่ผลิต/สำนักงาน'],
+['40 วิ','ผู้บริหารกล่าวปิด ตามด้วยโลโก้ ข้อความแบรนด์ และข้อมูลติดต่อ','[ข้อความแบรนด์: '+W+'] A.T.M. CORPORATION','ติดต่อ: '+W,'ห้องผู้บริหาร/หน้าโรงงาน']]}];
+const F=['ภายนอกโรงงานและป้ายบริษัท','สำนักงานและห้องผู้บริหาร','พื้นที่เก็บวัตถุดิบและเตรียมวัสดุ','ไลน์ผลิตฟิล์ม','ไลน์ผลิตถุง','พื้นที่พิมพ์/สั่งทำ (ถ้ามี)','จุด/ห้อง QC','คลังสินค้าและพื้นที่บรรจุ','จุดโหลดสินค้า/รถขนส่ง','บุคคล: ผู้บริหาร หัวหน้าฝ่าย พนักงานแต่ละฝ่าย','สินค้า 10 หมวด: LDPE, HDPE, VCI, Anti-static, Anti-UV, Stretch, Shrink, Cover Bags, เกษตร, สั่งทำ','ใบอนุญาตถ่ายทำและหนังสือยินยอมจากผู้ถูกถ่าย'];
+const I=['ชื่อ-ตำแหน่งผู้บริหาร','ชื่อฝ่ายและหัวหน้าฝ่าย','หน้าที่ของแต่ละฝ่ายและการประสานงาน','ผังโรงงานและชื่ออาคาร/พื้นที่','ชื่อ/รุ่นเครื่องจักร','ขั้นตอนการผลิตจริงแต่ละสายงาน','รายละเอียดและสเปกสินค้า','ขั้นตอน QC และเครื่องมือ','ใบรับรองและมาตรฐาน','ประวัติบริษัท','ข้อความแบรนด์และช่องทางติดต่อ','ข้อกำหนดความปลอดภัยและพื้นที่ห้ามถ่าย'];
+const Q=['กล้องมิเรอร์เลสหรือสมาร์ตโฟนรุ่นสูง ถ่าย 4K','เลนส์กว้างและเลนส์มาโคร','ขาตั้งกล้อง','กิมบอล/สเตบิไลเซอร์','ไมค์ไร้สายแบบหนีบปก + ไมค์ shotgun','ไฟ LED พกพา + รีเฟลกเตอร์','โดรน (เมื่อได้รับอนุญาต)','การ์ดความจำ/SSD สำรองข้อมูล','อุปกรณ์ PPE สำหรับทีมถ่ายทำ','โปรแกรมตัดต่อ: DaVinci Resolve / Premiere Pro / CapCut'];
+const S=[['สัปดาห์','งาน'],['1','รวบรวมข้อมูล ขออนุญาต สำรวจโลเคชัน สรุปสคริปต์'],['2','ถ่ายตอน 1–3 (รวมสัมภาษณ์ผู้บริหาร)'],['3','ถ่ายตอน 4–6 • ตัดต่อตอน 1–3'],['4','ถ่ายตอน 7–9 • ตัดต่อตอน 4–6'],['5','ถ่ายตอน 10–11 และภาพเสริม • ตัดต่อตอน 7–9'],['6','ตัดต่อตอน 10–11 • บริษัทตรวจ • แก้ไข • ส่งมอบ'],['หมายเหตุ','ข้อเสนอแนะ ปรับตามตารางการผลิตจริงของโรงงาน']];
+const U=[['ช่องทาง','แนวทางเผยแพร่ (ข้อเสนอแนะ)'],['Facebook Page','ลงตอนเต็ม สัปดาห์ละ 1 ตอน พร้อมคำบรรยายและแท็กสินค้า'],['Facebook Reels','ตัดสั้น 15–45 วินาที 2–3 คลิปต่อตอน เน้นภาพเครื่องจักรจริง'],['เว็บไซต์บริษัท','หน้า Factory Tour รวม 11 ตอนและปุ่มติดต่อฝ่ายขาย'],['YouTube','ตอนเต็มในเพลย์ลิสต์เดียว ช่วยค้นหาแบบ B2B'],['LinkedIn / LINE OA','ส่งต่อให้ลูกค้าองค์กรและพาร์ตเนอร์']];
+const R=[['ฟุตเทจ','ใช้ซ้ำในตอน'],['ภาพโดรนและภายนอกโรงงาน','1, 2, 11'],['B-roll เครื่องจักร','4, 5, 6, 7'],['Close-up สินค้า','1, 6, 7, 9'],['ภาพพนักงานทำงาน','1, 11 และทุกตอน'],['ภาพจุด QC','4, 5, 8'],['ภาพโหลดและคลังสินค้า','9, 10'],['โลโก้ lower-third และเพลง','ทุกตอน']];
+const $=s=>document.querySelector(s),st=(k,v)=>{try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){}};
+$('#oc').innerHTML='<div class="bx p">ผู้บริหารสูงสุด<br>'+W+'</div><div class="row">'+[1,2,3,4,5,6].map(n=>'<div class="bx p">ฝ่ายที่ '+n+'<br>หัวหน้า: '+W+'</div>').join('')+'</div>';
+$('#cards').innerHTML=E.map((e,i)=>'<button class="card" data-i="'+i+'"><b>'+(i+1)+'</b><span>'+e.t+'<small>'+e.d+'</small></span></button>').join('');
+function show(i){
+ const e=E[i],L=e.s[e.s.length-1];
+ document.querySelectorAll('.card').forEach((c,j)=>c.classList.toggle('on',j==i));
+ const M=[['วัตถุประสงค์',e.o],['กลุ่มเป้าหมาย',AUD],['ความยาวที่แนะนำ',e.d],['ฉากเปิด','ฉากที่ 1: '+e.s[0][1]],['ฉากปิด','ฉากที่ '+e.s.length+': '+L[1]],['สถานที่ถ่ายทำ',[...new Set(e.s.map(r=>r[4]))].join(', ')],['บุคคล/ฝ่ายที่ต้องถ่าย',e.w],['เครื่องจักร/อุปกรณ์ที่ต้องถ่าย',e.q],['ดนตรีและเสียง',MUS],['หมายเหตุการผลิต',(e.n?e.n+' • ':'')+SAF]];
+ $('#det').innerHTML='<h3>ตอนที่ '+(i+1)+': '+e.t+'</h3><dl class="meta">'+M.map(m=>'<div><dt>'+m[0]+'</dt><dd>'+m[1]+'</dd></div>').join('')+'</dl><div class="tw"><table><tr><th>ฉาก</th><th>ความยาว</th><th>ภาพ / การถ่ายทำ</th><th>คำบรรยาย (ไทย)</th><th>ข้อความบนจอ</th><th>สถานที่</th></tr>'+e.s.map((r,k)=>'<tr><td>'+(k+1)+'</td>'+r.map(c=>'<td>'+c+'</td>').join('')+'</tr>').join('')+'</table></div><div class="nv"><button class="b" '+(i?'':'disabled ')+'data-g="'+(i-1)+'">ตอนก่อนหน้า</button><button class="b" '+(i<10?'':'disabled ')+'data-g="'+(i+1)+'">ตอนถัดไป</button></div>';
+}
+function go(i){location.hash='ep'+(i+1);$('#det').scrollIntoView({behavior:'smooth'})}
+$('#cards').onclick=e=>{const c=e.target.closest('.card');if(c)go(+c.dataset.i)};
+$('#det').onclick=e=>{const b=e.target.closest('[data-g]');if(b)go(+b.dataset.g)};
+function route(){const m=/^#ep(\d+)$/.exec(location.hash);const i=m?+m[1]-1:0;if(i>=0&&i<11)show(i)}
+addEventListener('hashchange',route);route();
+const T=[['เช็กลิสต์ถ่ายทำ',F,0],['ข้อมูลที่ต้องรวบรวม',I,1],['อุปกรณ์',Q,0],['ตารางงาน',S,2],['แผนเผยแพร่',U,2],['ฟุตเทจใช้ซ้ำ',R,2]];
+function tab(n){
+ const[a,d,k]=T[n];
+ document.querySelectorAll('.tabs button').forEach((b,j)=>b.classList.toggle('on',j==n));
+ $('#pan').innerHTML=k==2?'<div class="tw"><table style="min-width:0"><tr>'+d[0].map(h=>'<th>'+h+'</th>').join('')+'</tr>'+d.slice(1).map(r=>'<tr>'+r.map(c=>'<td>'+c+'</td>').join('')+'</tr>').join('')+'</table></div>':d.map((x,j)=>'<label><input type="checkbox" data-k="atm'+n+'_'+j+'"'+(st('atm'+n+'_'+j)=='1'?' checked':'')+'>'+x+(k?' <span class="tg t3">'+W+'</span>':'')+'</label>').join('');
+}
+$('#tabs').innerHTML=T.map((t,n)=>'<button data-n="'+n+'">'+t[0]+'</button>').join('');
+$('#tabs').onclick=e=>{const b=e.target.closest('button');if(b)tab(+b.dataset.n)};
+$('#pan').onchange=e=>st(e.target.dataset.k,e.target.checked?'1':'0');
+tab(0);
+</script>
+</body>
+</html>
